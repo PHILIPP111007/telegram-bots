@@ -70,7 +70,6 @@ def run_timer(message, sec):
 
 	if sec == 0:
 		bot.send_message(message.chat.id, '⏰')
-		time.sleep(5)
 	elif 300 >= sec >= 1:
 		messagetoedit = bot.send_message(message.chat.id, f'Time left: {sec}⏳')
 		time.sleep(1)
